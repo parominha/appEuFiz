@@ -18,6 +18,7 @@
     <TabBar Route="main">
         <ShellContent Title="LOCAIS" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Paloma" Icon="icon_about.png" Route="PalomaPage" ContentTemplate="{DataTemplate local:PalomaPage}" />
         <ShellContent Title="Config" Icon="icon_about.png" Route="ConfigPage" ContentTemplate="{DataTemplate local:ConfigPage}" />
     </TabBar>
 

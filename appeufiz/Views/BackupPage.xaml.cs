@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace appeufiz.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddLocal : ContentPage
+    public partial class BackupPage : ContentPage
     {
-        public AddLocal()
+        public BackupPage()
         {
             InitializeComponent();
         }

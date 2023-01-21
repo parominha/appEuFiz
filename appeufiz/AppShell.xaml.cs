@@ -14,9 +14,12 @@ namespace appeufiz
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(ItemsPage), typeof(ItemsPage));
-            Routing.RegisterRoute(route:"RegisterPage", typeof(RegisterPage));
-            Routing.RegisterRoute(route:"LoginPage", typeof(LoginPage));
-            Routing.RegisterRoute(route:"ConfigPage", typeof(ConfigPage));
+            Routing.RegisterRoute(nameof(ConfigPage), typeof(ConfigPage));
+            Routing.RegisterRoute(nameof(PalomaPage), typeof(PalomaPage));
+            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+            Routing.RegisterRoute(nameof(AccountPage), typeof(AccountPage));
+            Routing.RegisterRoute(nameof(BackupPage), typeof(BackupPage));
+            Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
         }
 
     }

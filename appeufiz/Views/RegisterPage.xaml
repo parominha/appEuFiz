@@ -19,6 +19,9 @@
                     <Entry Placeholder="nome" PlaceholderColor="darkgray" HorizontalTextAlignment="Center" TextColor="white"></Entry>
                 </pancake:PancakeView>
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                    <Entry Placeholder="usuario" PlaceholderColor="darkgray" HorizontalTextAlignment="Center" TextColor="white"></Entry>
+                </pancake:PancakeView>
+                <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
                     <Entry Placeholder="e-mail" PlaceholderColor="darkgray" HorizontalTextAlignment="Center" TextColor="white" Keyboard="Email"></Entry>
                 </pancake:PancakeView>
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
@@ -28,7 +31,7 @@
                     <Entry Placeholder="senha" IsPassword="true" PlaceholderColor="darkgray" HorizontalTextAlignment="Center" TextColor="white"></Entry>
                 </pancake:PancakeView>
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
-                    <Entry Placeholder="confirme a senha" IsPassword="true" PlaceholderColor="DarkGray" HorizontalTextAlignment="Center" TextColor="white"></Entry>
+                    <Entry Placeholder="confirme a senha" IsPassword="true" PlaceholderColor="DarkGray" HorizontalTextAlignment="Center" TextColor="white" IsEnabled="True"></Entry>
                 </pancake:PancakeView>
                 <Button Text="Registrar-se" BackgroundColor="#9BBB59" CornerRadius="25" Margin="0,50,0,0"></Button>
             </StackLayout>

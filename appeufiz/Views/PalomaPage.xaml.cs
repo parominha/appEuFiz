@@ -5,9 +5,9 @@ using Xamarin.Forms.Xaml;
 
 namespace appeufiz.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class PalomaPage : ContentPage
     {
-        public AboutPage()
+        public PalomaPage()
         {
             InitializeComponent();
         }
