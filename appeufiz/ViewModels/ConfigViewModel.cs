@@ -14,9 +14,6 @@ namespace appeufiz.ViewModels
         public ConfigViewModel()
         {
         Title = "Config";
-        //    OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
-
-        public ICommand OpenWebCommand { get; }
     }
 }

@@ -17,9 +17,9 @@ namespace appeufiz.Views
             InitializeComponent();
         }
 
-        private void btnAltSenha_Clicked(object sender, EventArgs e)
+        async private void btnAltSenha_Clicked(object sender, EventArgs e)
         {
-            
+            await Shell.Current.GoToAsync("AccountPage/PasswordPage");
         }
 
         private void btnAltDados_Clicked(object sender, EventArgs e)

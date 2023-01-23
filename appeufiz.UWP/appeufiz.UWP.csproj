@@ -104,8 +104,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="backup_green.png" />
+    <Content Include="config_fillwhite.png" />
+    <Content Include="config_green.png" />
     <Content Include="eufiz.png" />
+    <Content Include="key_green.png" />
     <Content Include="location.png" />
+    <Content Include="location_fillwhite.png" />
+    <Content Include="logout_green.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
@@ -135,6 +141,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="userw.png" />
+    <Content Include="user_green.png" />
     <Content Include="xamarin_logo.png" />
     <Content Include="icon_about.png" />
     <Content Include="icon_feed.png" />
@@ -158,6 +165,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
       <Version>2.3.0.759</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Plugin.Calendar">
+      <Version>2.0.9699</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

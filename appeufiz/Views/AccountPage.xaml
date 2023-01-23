@@ -11,13 +11,16 @@
 
 
     <ContentPage.Content>
-        <Grid>
-            <StackLayout>
-                <Label Text="MINHA CONTA" TextColor="White" FontSize="28" HorizontalOptions="CenterAndExpand" Padding="0,5,0,50"/>
+        <Grid Padding="15,0,15,0">
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Padding="0,5,0,30">
+                <Image Source="user_green.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Fill"></Image>
+                <Label Text="MINHA CONTA" TextColor="White" FontSize="28" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
-            <StackLayout Padding="0,45,0,0">
+            
+            <StackLayout Padding="0,40,0,0">
                 
-                <Label Text="Nome" TextColor="White" FontSize="18" Padding="15,0,0,0"/>
+                <Label Text="Nome" TextColor="White" FontSize="18" Padding="15,30,0,0"/>
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="45">
                     <Entry x:Name="DBNome" HorizontalTextAlignment="Center" TextColor="white" IsEnabled="False"></Entry>
                 </pancake:PancakeView>
@@ -37,7 +40,7 @@
                     <Entry x:Name="DBTelefone" HorizontalTextAlignment="Center" TextColor="white" IsEnabled="False"></Entry>
                 </pancake:PancakeView>  
 
-                <Button x:Name="btnAltDados" Clicked="btnAltDados_Clicked" Text="Alterar dados" Margin="0,0,0,30" BackgroundColor="#333333" CornerRadius="25" ></Button>
+                <Button x:Name="btnAltDados" Clicked="btnAltDados_Clicked" Text="Alterar dados" Margin="0,30,0,20" BackgroundColor="#333333" CornerRadius="25" ></Button>
                 <Button x:Name="btnAltSenha" Clicked="btnAltSenha_Clicked" Text="Alterar senha" Margin="0,0,0,0" BackgroundColor="#333333" CornerRadius="25" ></Button>
                 
             </StackLayout>

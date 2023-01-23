@@ -16,10 +16,9 @@
     </ShellItem>
     
     <TabBar Route="main">
-        <ShellContent Title="LOCAIS" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Paloma" Icon="icon_about.png" Route="PalomaPage" ContentTemplate="{DataTemplate local:PalomaPage}" />
-        <ShellContent Title="Config" Icon="icon_about.png" Route="ConfigPage" ContentTemplate="{DataTemplate local:ConfigPage}" />
+        <ShellContent Title="LOCAIS" Icon="location_fillwhite.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="CONFIG." Icon="config_fillwhite.png" Route="ConfigPage" ContentTemplate="{DataTemplate local:ConfigPage}" />
+        <ShellContent Title="CALENDARIO" Icon="config_fillwhite.png" Route="CalendarPage" ContentTemplate="{DataTemplate local:CalendarPage}" />
     </TabBar>
 
     <Shell.Resources>

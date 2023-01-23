@@ -11,10 +11,13 @@
 
     <ContentPage.Content>
       <StackLayout>
-            <Label Text="CONFIGURAÇÕES" TextColor="White" FontSize="28" HorizontalOptions="CenterAndExpand" Padding="0,30,0,50"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,30,0,50">
+                <Image Source="config_green.png" HeightRequest="40" WidthRequest="40" HorizontalOptions="Fill"></Image>
+                <Label Text="CONFIGURAÇÕES" TextColor="White" FontSize="28" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
 
-            <StackLayout Orientation="Vertical" Padding="30,0,30,24">
-                <Button x:Name="btnConta" Margin="0,0,0,15" Text="Minha conta" 
+            <StackLayout Orientation="Vertical" Padding="40,0,30,24">
+                <Button x:Name="btnConta" Margin="0,0,0,15" Text="Minha conta"                         
                         BackgroundColor="#333333"
                         TextColor="White"
                         CornerRadius = "25"
