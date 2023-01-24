@@ -10,20 +10,27 @@ namespace appeufiz.ViewModels
     public class ItemDetailViewModel : BaseViewModel
     {
         private string itemId;
-        private string text;
-        private string description;
+        private string nome;
+        private string longitude;
+        private string latitude;
         public string Id { get; set; }
 
-        public string Text
+        public string Nome
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => nome;
+            set => SetProperty(ref nome, value);
         }
 
-        public string Description
+        public string Longitude
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => longitude;
+            set => SetProperty(ref longitude, value);
+        }
+
+        public string Latitude
+        {
+            get => latitude;
+            set => SetProperty(ref latitude, value);
         }
 
         public string ItemId
@@ -45,8 +52,9 @@ namespace appeufiz.ViewModels
             {
                 var item = await DataStore.GetItemAsync(itemId);
                 Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Nome = item.Nome;
+                Longitude = item.Longitude;
+                Latitude = item.Latitude;
             }
             catch (Exception)
             {

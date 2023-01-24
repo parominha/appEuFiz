@@ -4,13 +4,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace appeufiz.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
-        private string description;
+        private string nome;
+        private string longitude;
+        private string latitude;
 
         public NewItemViewModel()
         {
@@ -22,20 +24,26 @@ namespace appeufiz.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
-                && !String.IsNullOrWhiteSpace(description);
+            return !String.IsNullOrWhiteSpace(nome)
+                && !String.IsNullOrWhiteSpace(longitude)
+                && !String.IsNullOrWhiteSpace(latitude);
         }
 
-        public string Text
+        public string Nome
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => nome;
+            set => SetProperty(ref nome, value);
         }
 
-        public string Description
+        public string Longitude
         {
-            get => description;
-            set => SetProperty(ref description, value);
+            get => longitude;
+            set => SetProperty(ref longitude, value);
+        }
+        public string Latitude
+        {
+            get => latitude;
+            set => SetProperty(ref latitude, value);
         }
 
         public Command SaveCommand { get; }
@@ -52,8 +60,9 @@ namespace appeufiz.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                Nome = Nome,
+                Longitude = Longitude,
+                Latitude = Latitude
             };
 
             await DataStore.AddItemAsync(newItem);

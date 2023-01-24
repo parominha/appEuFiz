@@ -12,7 +12,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout>
-                <Image Source="userw.png" HeightRequest="60" WidthRequest="60" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,30,0,0"></Image>
+                <Image Source="newuser_green.png" HeightRequest="60" WidthRequest="60" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,30,0,0"></Image>
             </StackLayout>
             <StackLayout Padding="20,130,20,0">
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">

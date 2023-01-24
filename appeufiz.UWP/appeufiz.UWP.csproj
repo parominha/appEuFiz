@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="backup_green.png" />
+    <Content Include="calendar_fillwhite.png" />
     <Content Include="config_fillwhite.png" />
     <Content Include="config_green.png" />
     <Content Include="eufiz.png" />
@@ -112,6 +113,7 @@
     <Content Include="location.png" />
     <Content Include="location_fillwhite.png" />
     <Content Include="logout_green.png" />
+    <Content Include="newuser_green.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />

@@ -4,7 +4,7 @@
              x:Class="appeufiz.Views.ItemsPage"
              Title="MEUS LOCAIS"
              xmlns:local="clr-namespace:appeufiz.ViewModels"  
-             xmlns:model="clr-namespace:appeufiz.Models"  
+             xmlns:model="clr-namespace:appeufiz.Models" xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Name="BrowseItemsPage"
              BackgroundColor="#1A1A1A">
 
@@ -21,15 +21,13 @@
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Item">
-                        <Label Text="{Binding Text}" 
+                    <StackLayout x:DataType="model:Item">
+                        <pancake:PancakeView BackgroundColor="#333333" CornerRadius="25" HeightRequest="45" Margin="15,50,15,0" >
+                            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Nome}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" TextColor="White"/>
-                        <Label Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" TextColor="White"/>
+                            FontSize="20" TextColor="#9BBB59"/>
+                        </pancake:PancakeView>
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"

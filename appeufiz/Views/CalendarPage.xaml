@@ -12,11 +12,11 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label TextColor="white" Text="Calendario" VerticalOptions="Start"/>
+            <Label TextColor="white" Text="Calendario" VerticalOptions="Start" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
     
-    <controls:Calendar
+    <controls:Calendar Padding="15,100,15,15"
         VerticalOptions="Center"
         YearLabelColor="#9BBB59"
         MonthLabelColor="#9BBB59"
@@ -30,7 +30,8 @@
         EventIndicatorSelectedColor="#9BBB59"
         EventIndicatorColor="#9BBB59"
         SelectedDateColor="#9BBB59"
-        SelectedDayBackgroundColor="white"    
+        SelectedDayBackgroundColor="white"
+        Culture="{Binding Culture}"
         Events="{Binding Events}">
         <controls:Calendar.EventTemplate>
             <DataTemplate>

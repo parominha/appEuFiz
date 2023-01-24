@@ -184,4 +184,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\logout_green.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\newuser_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\calendar_fillwhite.png" />
+  </ItemGroup>
 </Project>

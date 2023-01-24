@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Xamarin.Plugin.Calendar.Models;
@@ -31,8 +32,17 @@ namespace appeufiz.ViewModels
 
         public EventCollection Events { get; set; }
 
+        private CultureInfo _culture = CultureInfo.InvariantCulture;
+        public CultureInfo Culture
+        {
+            get => _culture;
+            set => SetProperty(ref _culture, value);
+        }
+
         private void CarregarLembretes()
         {
+            Culture = CultureInfo.CreateSpecificCulture("pt-BR");
+
             Events = new EventCollection
             {
                 [DateTime.Now] = new List<Lembrete>
@@ -61,5 +71,7 @@ namespace appeufiz.ViewModels
         {
             CarregarLembretes();
         }
+
+
     }
 }

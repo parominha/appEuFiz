@@ -14,11 +14,10 @@
         <Grid Padding="15,0,15,0">
             
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Padding="0,5,0,30">
-                <Image Source="user_green.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Fill"></Image>
-                <Label Text="MINHA CONTA" TextColor="White" FontSize="28" HorizontalOptions="FillAndExpand"/>
+                <Image Source="user_green.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Fill"></Image>
             </StackLayout>
             
-            <StackLayout Padding="0,40,0,0">
+            <StackLayout Padding="0,50,0,0">
                 
                 <Label Text="Nome" TextColor="White" FontSize="18" Padding="15,30,0,0"/>
                 <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="45">

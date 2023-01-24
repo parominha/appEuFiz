@@ -4,10 +4,12 @@ using System.Text;
 
 namespace appeufiz.Models
 {
-    public class Lembrete
+    public class Local
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public bool Status { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+        public DateTime DataCriacao { get; set; }
     }
 }
