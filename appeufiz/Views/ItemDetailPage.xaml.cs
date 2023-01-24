@@ -16,6 +16,8 @@ namespace appeufiz.Views
         {
             string result = await DisplayPromptAsync("Novo lembrete", " ");
             lblLembrete1.Text = result;
+            // inserir no banco de dados
+
         }
     }
 }
