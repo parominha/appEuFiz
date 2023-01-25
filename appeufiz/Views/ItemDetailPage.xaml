@@ -11,27 +11,11 @@
             <Label Text="NomeLocal" TextColor="#9BBB59" HorizontalOptions="CenterAndExpand" FontSize="20"></Label>
         </StackLayout>
         <StackLayout Spacing="20" Padding="15,130,0,15">
-            
+
             <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
                 <Label x:Name="lblLembrete1" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
             </pancake:PancakeView>
-            
-            <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
-                <Label x:Name="lblLembrete2" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-            </pancake:PancakeView>
-            
-            <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
-                <Label x:Name="lblLembrete3" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-            </pancake:PancakeView>
-            
-            <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
-                <Label x:Name="lblLembrete4" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-            </pancake:PancakeView>
-            
-            <pancake:PancakeView BackgroundColor="#333333" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
-                <Label x:Name="lblLembrete5" FontSize="Medium" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
-            </pancake:PancakeView>
-            
+
             <!--<Label Text="{Binding Nome}" FontSize="Small" TextColor="White" />
             <Label Text="Description:" FontSize="Medium" TextColor="White" />
             <Label Text="{Binding Description}" FontSize="Small" TextColor="White" />-->
