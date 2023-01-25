@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\Local.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Fontes\Comfortaa-Bold.ttf" />
     <None Remove="Fontes\Comfortaa-Light.ttf" />
     <None Remove="Fontes\Comfortaa-Medium.ttf" />
